@@ -95,7 +95,7 @@
 
             //colors
             color yellow = color(255,252, 25);
-            color red = color(178,18,18);
+            color purple = color(186,85,211);
             color orange = color(255,83, 13);
             color blue = color(9, 113, 178);
             color pink = color(255, 182, 193);
@@ -134,7 +134,7 @@
         
             void setup() {
                 size(CANVAS_WIDTH,CANVAS_HEIGHT);
-                background(red);
+                background(blue);
                 
                 state = new GameState(0); //set to homepage
 
@@ -412,7 +412,7 @@
                 }
 
                 void home(){
-                    background(red);
+                    background(purple);
                     textFont(font, 12); 
                     textSize(15);
                     title.display(0,0);
@@ -436,7 +436,7 @@
                 }
 
                 void artistThree(){
-                    background(red);
+                    background(purple);
                     image(statementThree,0,0);
                     if (tampY < 280) {
                         animThree.display(0,130);
@@ -518,7 +518,7 @@
 
                     //low on tampons
                     if ((tampon <= 5) && (drawCount % 15 <= 2)) {
-                        tamponWarning = color(red);
+                        tamponWarning = color(purple);
                     } else {
                         tamponWarning = color(0);
                     }
@@ -529,7 +529,7 @@
                 }
                     
                 void gameOver(){
-                    background(red);
+                    background(blue);
                     textFont(font, 30);
                     fill(255);
                     //text("Thanks for playing!", 200, 200);
